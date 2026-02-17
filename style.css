@@ -1,0 +1,175 @@
+@charset "utf-8";
+
+header {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;           
+  padding: 2% 10% 1%;               
+}
+header img{
+  margin-left: 0;
+}
+nav a {
+  font-size: 14px;
+  text-decoration: none;
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+}
+img[src="mainvisual.jpg"] {
+  width: 100vw;          
+  height: 600px;        
+  object-fit: cover;    
+  object-position: center; 
+  display: block;   
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);  
+}
+nav{
+  margin-right: 0;
+}
+.title-wrapper {
+  text-align: center; 
+  margin-top: 40px;   
+}
+
+h1 {
+  font-size: 32px;
+  display: inline-block;
+  border-bottom: 1px solid #333;
+  padding-bottom: 5px;
+}
+section{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  margin: 40px auto;
+  padding: 0 4%;
+}
+section.about{
+  max-width: 600px;
+}
+
+h2{
+  font-size: 16px;
+}
+div{
+  font-size: 14px;
+}
+
+.about img{
+  border-radius: 50%;
+  margin-right: 30px;
+}
+h3{
+  font-size: 32px;
+  display: inline-block;
+  border-bottom: 1px solid #333;
+  padding-bottom: 5px;
+}
+.three-bicycle{
+  text-align: center; 
+  margin-top: 80px 0 40px;   
+}
+.bicycle-list {
+  display: flex;
+  justify-content: center; /* これで真ん中寄せ！ */
+  max-width: 960px;        /* 画面いっぱいに広がらないよう制限 */
+  padding: 0 4%;
+}
+/* 自転車セクション全体の箱 */
+section.bicycle {
+  display: flex;
+  justify-content: center; 
+  align-items: flex-start; 
+  max-width: 780px;        
+  text-align: center;
+ margin-top: 20px;
+ padding: 0 4%;
+ gap: 0;
+ 
+}
+
+.bicycle-list {
+  display: block;         
+  flex: 0 0 260px;
+  width: 260px;            
+}
+
+/* 自転車の画像 */
+.bicycle-list img {
+  width: 100%;   
+  height: auto;   
+  display: block;
+  margin-bottom: 10px;                       
+}
+
+/* タイトルとテキスト */
+.bicycle-list h4 {
+  font-size: 16px;
+}
+
+.bicycle-list p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+.three-bicycle {
+  text-align: center; 
+  margin-top: 40px; 
+}
+footer{
+  
+  color: #555;
+  padding: 12px 0;
+text-align: center;
+}
+small{
+  font-size: 12px;
+}
+
+
+/* 画面幅が600px以下の時（スマホ用）の設定 */
+@media (max-width: 600px) {
+  header img {
+    margin-left: 0;   
+  }
+  
+  nav {
+    margin-right: 0; 
+  }
+
+  header {
+    padding: 3% 4%;   
+  }
+  img[src="mainvisual.jpg"] {
+    width: 100vw;
+    height: 600px; 
+    object-fit: cover;
+    object-position: center; 
+    margin-left: calc(50% - 50vw);
+  }
+
+  /* 3. セクション全体：すべて縦並びに */
+  section, section.about, section.bicycle {
+    flex-direction: column;
+    max-width: 100%;
+    margin: 40px auto;
+    gap: 30px; 
+  }
+
+  /* About：画像の右余白を消して、下に余白を作る */
+  .about img {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .about div {
+    text-align: center; /* スマホでは文章も中央寄せが綺麗です */
+  }
+
+  /* Bicycle：各リストを幅いっぱい（または指定幅）にして縦に積む */
+  .bicycle-list {
+    flex: none;
+    width: 100%;
+    max-width: 300px; /* 画像が大きくなりすぎないよう制限 */
+  }
+}
