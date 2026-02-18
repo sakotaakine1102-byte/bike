@@ -157,8 +157,7 @@ small{
 
   /* About：画像の右余白を消して、下に余白を作る */
   .about img {
-    margin-right: 0;
-    margin-bottom: 20px;
+    margin: 0 auto 20px;
   }
   .about div {
     text-align: center; 
