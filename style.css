@@ -42,7 +42,6 @@ h1 {
 section{
   text-align: center;
   display: flex;
-  align-items: center;
   margin: 40px auto;
   padding: 0 4%;
 }
@@ -163,7 +162,7 @@ small{
     margin-bottom: 20px;
   }
   .about div {
-    text-align: center; /* スマホでは文章も中央寄せが綺麗です */
+    text-align: center; 
   }
 
   /* Bicycle：各リストを幅いっぱい（または指定幅）にして縦に積む */
@@ -171,5 +170,6 @@ small{
     flex: none;
     width: 100%;
     max-width: 300px; /* 画像が大きくなりすぎないよう制限 */
+    margin: o auto;
   }
 }
