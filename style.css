@@ -40,7 +40,6 @@ h1 {
   padding-bottom: 5px;
 }
 section{
-  text-align: center;
   display: flex;
   margin: 40px auto;
   padding: 0 4%;
@@ -170,6 +169,6 @@ small{
     flex: none;
     width: 100%;
     max-width: 300px; /* 画像が大きくなりすぎないよう制限 */
-    margin: o auto;
+    margin: 0 auto;
   }
 }
